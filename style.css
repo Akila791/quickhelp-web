@@ -1,0 +1,469 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.brand-name {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.brand-name h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.brand-name span {
+    color: #FFD700;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 0px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    flex: 1;
+    text-align: left;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Navigation */
+nav {
+    flex: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+    border-right: 2px solid #FFD700; /* Hover right border color */
+}
+
+/* Language Selector */
+.language-selector {
+    margin-left: 20px;
+}
+
+.language-selector button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.language-selector button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/1.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #28a745;
+    color: #f0f0f0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* App Image */
+.app-image {
+    margin-top: 30px;
+}
+
+.app-image img {
+    max-width: 10%; /* Adjusted size to fit better */
+    height: auto;
+    border-radius: 10px; 
+    border: 2px solid #007bff; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Services Section */
+#services {
+    background: #fff;
+    padding: 60px 0;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #007bff;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #f0f0f0;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+footer ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0f0f0; /* Change to white on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+}
+
+/* About Us Section */
+h2 {
+    text-align: center; /* Centers the heading text */
+    font-size: 36px; /* Font size for emphasis */
+    color: #010863; /* Dark blue color */
+    margin-bottom: 40px; /* Space below the heading */
+    font-weight: 700; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for consistency */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    background: linear-gradient(90deg, #0042f7, #000000); /* Gradient background */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes text color transparent to show the gradient */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+
+
+#about-us p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* Team Grid */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    gap: 20px; /* Adds spacing between the items */
+    justify-content: center; /* Center items horizontally */
+    margin: 0 auto; /* Center the grid itself */
+}
+
+/* Team Member */
+.team-member {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px; /* Allows the items to grow and shrink */
+    max-width: 300px; /* Ensure items don't grow too large */
+    margin: 0 10px; /* Margin between items */
+}
+
+.team-member img {
+    width: 150px; /* Set a consistent width */
+    height: 150px; /* Set a consistent height */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #333;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 100%; /* Stack team members vertically on small screens */
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Center the login container within the viewport */
+
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #a7a7a7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login-option {
+    margin-bottom: 20px;
+}
+
+.login-option label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.login-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Registration Form Section */
+section#register {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+}
+
+#register-button {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#register-button:hover {
+    background-color: #16a085;
+}
+
